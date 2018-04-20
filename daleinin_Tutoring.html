@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<!--See the CSS for the specifics on how the "html" has been styled.-->
+<html>
+
+  
+  <!--Contains all formal preliminaries for the pages-->
+  <head>
+    <!--Title of the Webpage-->
+    <title>Dustin Leininger Tutoring</title>
+
+    <!--Link to the Google Fonts Used-->
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Raleway" rel="stylesheet">  
+
+    <!--Link to the CSS Style Sheet-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+
+  <!--See the CSS for the specifics on how the "body" has been styled.-->
+  <body>
+
+    <!--This is the navigation bar at the top of the page-->
+    <!--The div refers to the .navigation class in the CSS which specifies the border style and word spacing. The IDs in the list elemnts specify that the list should be inline as we as specifying font-family and font-size. Finally, the class in each link specifies color depending on the page and no underlines-->
+    <div class="navigation">
+      <ul id="nav-ul">
+	<li id="nav-li"> <a href="index.html" class="nav_link_off"> About </a> </li>
+	
+	<li id="nav-li"> <a href="daleinin_Tutoring.html" class="nav_link_on"> Tutoring </a> </li>
+	
+	<li id="nav-li"> <a href="daleinin_Teaching.html" class="nav_link_off"> Teaching </a> </li>
+	
+	<li id="nav-li"> <a href="daleinin_Research.html" class="nav_link_off"> Research </a> </li>
+      </ul>
+    </div>
+
+
+    <!--This div contains the sidebar which appears on every page with varying text-->
+    <div class="sidebar">
+
+      <!--The "aside" container ensures the sidebar is indeed on the side of the page.-->
+      <aside>
+
+	  <!--This sub-div contains the link to my profile picture whichappears on every page including a caption with my name-->
+	  <div>
+	    <img class="portrait" src="profile-min.JPG" alt="portrait">
+	    <figcaption id="caption">
+	      Dustin Leininger
+	    </figcaption>
+	  </div>
+
+	  <!--This div contains the primary content of the sidebar. As such it applies the class ".sidep" from the CSS style sheet.-->
+	  <div>
+	    <p class="sidep">
+	      <!--This is my email and a link to Google maps with the location of my office. The link to Google maps is styled by the "office" ID in the CSS which makes the font-color of the link black.-->
+	      <strong>
+		Email: daleinin@ncsu.edu <br>
+		Office: <a id="office" href="https://www.google.com/maps/place/Language+and+Computer+Labs,+2341+Stinson+Dr,+Raleigh,+NC+27607/@35.7848425,-78.6697413,17z/data=!3m1!4b1!4m5!3m4!1s0x89acf58e19e85681:0xfaa5c303c40f3cb9!8m2!3d35.7848425!4d-78.6675526" target="_blank"> Laundry 108 </a>
+	      </strong>
+	      <br>
+	      <br>
+	      Hello and Welcome!<br>
+	      You have found my personal website. <br>
+	      <br>
+	      This page is dedicated to the private tutoring services I offer throughtout the academic year. Here you'll find a brief description of my previous experiences with tutoring and education as well as a fairly comprehensive list of courses and subjects for which I am available.
+	      <br>
+	      <br>
+	      The best way to contact me is via the email address above.
+	      <br>
+	      <br>
+	      <br>
+	      <!--This is a list of links to NCSU and the Math Dept. See the CSS for how the "sidebar_link" class styles the links.-->
+	      <strong style="text-decoration:underline">
+		Links
+	      </strong>
+
+	      <ul>
+		<li> <a href="https://www.ncsu.edu/" target="_blank" class="sidebar_link"> North Carolina State University </a> </li>
+		<br>
+		<li> <a href="https://math.sciences.ncsu.edu/" target="_blank" class="sidebar_link"> Mathematics Department </a> </li>
+	      </ul>
+	      
+	    </p>
+	  </div>
+	  
+      </aside>
+    </div>
+    
+    <!--This little div contains the header which appears of the page before the main text of the page. See the CSS for the styles which have been applied to the "h1" environment.-->
+    <div>
+      <h1 class="header" style="text-align:center">All About My Tutoring</h1>
+    </div>
+
+    <!--This div conatins the primary content of the page-->
+    <!--See the CSS for the "tut_mainp" class which contains all of the border and font stylings for the main paragraph text on the tutoring page.-->
+    <div class="tut_mainp">
+      <ul>
+	
+	<li> <strong> Courses: </strong> </li>
+
+	<!--This lists the Calculus Courses which I tutor.-->
+	<ul>
+	  <li> Calculus: </li>
+
+	  <ul>
+	    <li> Calculus I: MA 121, MA 131, MA 141 </li>
+	    <li> Calculus II: MA 241 </li>
+	    <li> Calculus III: MA 242 </li>
+	  </ul>
+	    
+	</ul>
+	
+	<br>
+
+	<!--This lists the Differential Courses which I tutor.-->
+	<ul>
+	  <li> Differential Equations: </li>
+
+	  <ul>
+	    <li> Ordinary Differential Equations (ODEs): MA 341 </li>
+	    <li> Partial Differential Equations (PDEs): MA 401, MA 501</li>
+	  </ul>
+	    
+	</ul>
+
+	<br>
+
+	<!--This lists the Proof Based Courses which I tutor.-->
+	<ul>
+	  <li> Proof Based Courses: </li>
+
+	  <ul>
+	    <li> Foundations of Advanced Mathematics: MA 225 </li>
+	    <li> Real Analysis I: MA 425 </li>
+	    <li> Real Analysis II: MA 426 </li>
+	  </ul>
+	    
+	</ul>
+
+	<br>
+
+	<!--This lists the Physics Courses which I tutor.-->
+	<ul>
+	  <li> Physics: </li>
+
+	  <ul>
+	    <li> College Physics I: PY 211 </li>
+	    <li> University Physics I: PY 201 </li>
+	    <li> University Physics II: PY 202 </li>
+	    <li> Physics for Engineers and Scientists I: PY 205 </li>
+	    <li> Physics for Engineers and Scientists II: PY 208 </li>
+	  </ul>
+	    
+	</ul>
+	
+      </ul>
+      <p>(other courses maybe available upon request.)</p>
+    </div>
+    
+    <!--See the CSS for the "tut_mainp" class which contains all of the border and font stylings for the main paragraph text on the tutoring page.-->
+    <div class="tut_mainp">
+      <!--This lists my experiences as a tutor with links styled by the "#office" ID. See the CSS for details-->
+      <ul>
+	<li> <strong> Experience: </strong> (proffessional tutorial centers, not inlcuding private tutoring) </il>
+        <br>
+        <br>
+        <ul>
+	  <li> Jan. 2016 - Present </li>
+	  
+	  <ul>
+	    <li> <a id="office" href="https://math.sciences.ncsu.edu/undergraduate/courses-faq/math-multimedia-center/" target="_blank"> Math Multimedia Center (MMC): </a> is a free drop-in tutorial center run and operated by the Math Department at North Carolina State University where math grad students are made available to help students on material related to any math courses and is in general a fantastic resource for students. As a grad student, I have been working in the MMC every Fall and Spring semester since the Spring of 2015-2016 academic year. In addition, I worked in the MMC part-time during first summer session of 2017. </li>
+          <br> 
+	  </ul>
+
+	  
+          <li> Aug. 2015 - Jan. 2016 </li>
+	  
+	  <ul>
+	    <li> <a id="office" href="https://trio.dasa.ncsu.edu/about/" target="_blank"> TRIO Programs: </a> is a collection of programs focused on providing additional academic resources and support to help ensure that every student has the opportunity to move from high school to college and beyond. I was employed by the Student Support Services (SSS) branch of the program where I worked as a one-on-one mathematics tutor primarly helping students with calculus one, two, three, and ordinary differential equations. </li>
+	  </ul>
+
+	  <br>
+
+	  <li> Aug. 2014 - Dec. 2014 </li>
+	  
+	  <ul>
+	    <li> <a id="office" href="https://physicstutorialcenter.wordpress.ncsu.edu/" target="_blank"> Physics Tutorial Center (PTC): </a> is a drop-in tutorial center run and operated by the Physics Department at North Carolina State University. While similar in style to the MMC, the PTC also often hires advanced undergraduates as well as graduate students in the physics department. While employed in the PTC, we were free to help any student on any physics related material. </li>
+	  </ul>
+	
+      </ul>
+    </div>
+     
+  </body>
+
+  <!--This footer appears at the bottom of every page and credits the author of the background image-->
+   <footer> <a href="http://www.freepik.com/free-photos-vectors/background" style="color:Grey;margin:40px">Background vector created by Kjpargeter - Freepik.com</a>
+  </footer>
+
+  
+</html>

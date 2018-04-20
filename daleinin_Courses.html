@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<!--See the CSS for the specifics on how the "html" has been styled.-->
+<html>
+
+
+  <!--Contains all formal preliminaries for the pages-->
+  <head>
+    <!--Title of the Webpage-->
+    <title>Dustin Leininger Courses</title>
+
+    <!--Link to the Google Fonts Used-->
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Raleway" rel="stylesheet">  
+
+    <!--Link to the CSS Style Sheet-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+  </head>
+
+  <!--See the CSS for the specifics on how the "body" has been styled.-->
+  <body>
+
+    <!--This is the navigation bar at the top of the page-->
+    <!--The div refers to the .navigation class in the CSS which specifies the border style and word spacing. The IDs in the list elemnts specify that the list should be inline as we as specifying font-family and font-size. Finally, the class in each link specifies color depending on the page and no underlines-->
+    <div class="navigation">
+      <ul id="nav-ul">
+	<li id="nav-li"> <a href="index.html" class="nav_link_off"> About </a> </li>
+	
+	<li id="nav-li"> <a href="daleinin_Tutoring.html" class="nav_link_off"> Tutoring </a> </li>
+	
+	<li id="nav-li"> <a href="daleinin_Teaching.html" class="nav_link_off"> Teaching </a> </li>
+	
+	<li id="nav-li"> <a href="daleinin_Research.html" class="nav_link_off"> Research </a> </li>
+      </ul>
+    </div>
+
+    
+    <!--This div contains the sidebar which appears on every page with varying text-->
+    <div class="sidebar">
+
+      <!--The "aside" container ensures the sidebar is indeed on the side of the page.-->
+      <aside>
+
+	  <!--This sub-div contains the link to my profile picture whichappears on every page including a caption with my name-->
+	  <div>
+	    <img class="portrait" src="profile-min.JPG" alt="portrait">
+	    <figcaption id="caption">
+	      Dustin Leininger
+	    </figcaption>
+	  </div>
+
+	  <!--This div contains the primary content of the sidebar. As such it applies the class ".sidep" from the CSS style sheet.-->
+	  <div>
+	    <p class="sidep">
+	      <!--This is my email and a link to Google maps with the location of my office. The link to Google maps is styled by the "office" ID in the CSS which makes the font-color of the link black.-->
+	      <strong>
+		Email: daleinin@ncsu.edu <br>
+		Office: <a id="office" href="https://www.google.com/maps/place/Language+and+Computer+Labs,+2341+Stinson+Dr,+Raleigh,+NC+27607/@35.7848425,-78.6697413,17z/data=!3m1!4b1!4m5!3m4!1s0x89acf58e19e85681:0xfaa5c303c40f3cb9!8m2!3d35.7848425!4d-78.6675526" target="_blank"> Laundry 108 </a>
+	      </strong>
+	      <br>
+	      <br>
+	      Hello and Welcome!<br>
+	      You have found my personal website. <br>
+	      <br>
+	      This page is dedicated to the ressources I have cultivated around some of the courses I have taken as a graduate student at North Carolina State University.
+	      <br>
+	      <br>
+	      <br>
+	      <!--This is a list of links to NCSU and the Math Dept. See the CSS for how the "sidebar_link" class styles the links.-->
+	      <strong style="text-decoration:underline">
+		Links
+	      </strong>
+
+	      <ul>
+		<li> <a href="https://www.ncsu.edu/" target="_blank" class="sidebar_link"> North Carolina State University </a> </li>
+		<br>
+		<li><a href="https://math.sciences.ncsu.edu/" target="_blank" class="sidebar_link"> Mathematics Department </a> </li>
+	      </ul>
+	      
+	    </p>
+	  </div>
+	  
+      </aside>
+    </div>
+
+    <!--This little div contains the header which appears of the page before the main text of the page. See the CSS for the styles which have been applied to the "h1" environment.-->
+    <div>
+      <h1 class="header">All About My Courses</h1>
+    </div>
+
+    <!--This div conatins the primary content of the page-->
+    <div>
+      <!--See the CSS for the "hom_mainp" class which contains all of the border and font stylings for the main paragraph text on the home page.-->
+      <p class="hom_mainp"> COURSES, this is where details about the graduate courses will go! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </p>
+    </div>
+     
+  </body>
+
+  <!--This footer appears at the bottom of every page and credits the author of the background image-->
+   <footer> <a href="http://www.freepik.com/free-photos-vectors/background" style="color:Grey;margin:40px">Background vector created by Kjpargeter - Freepik.com</a>
+  </footer>
+
+  
+</html>

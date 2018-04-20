@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/*This block sets the background of the pages*/
+html{
+    background-color: Black;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*This block specifies the dimansions of the body of the pages. Auto margin centers the page on the screen, and over flow allows the viewer to scroll when zooming in to view peortions of the page which have moved off screen due to the zoom.*/
+body {
+    max-width: 1400px;
+    min-width: 1300px;
+    overflow: scoll;
+    margin: auto;
+}
+
+
+/*This block specifies the font styling of the largest header designation*/
+h1 {  
+   color: Grey;
+   width: 1000px;
+   margin-top: 50px;
+   margin-left: 30px;
+   margin-right: 30px;
+   font-family: "Berkshire Swash", cursive;
+   font-size: 40px;
+}
+
+
+/*All of the IDs and Classes whose name starts with "nav" are used in styling the navigation bar which appears at the top of each page.*/
+/*This class sets the border-style for navigation bar*/
+.navigation {
+    border-style: ridge;
+    border-radius: 10px;
+    border-width: 5px 0px 5px 0px;
+    border-color: SaddleBrown;
+    text-align: center;
+    word-spacing: 3em;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+
+/*This ID makes sure the navigation bar appears as a horizontal lits*/
+#nav-ul {
+    display: inline;
+}
+
+
+/*This ID (similar to #nav-ul above) ensures the navigation bar appears as a horizontal list as well as sets the font stylings*/
+#nav-li {
+    display: inline-block;
+    font-family: "Berkshire Swash", cursive;
+    font-size: 35px;
+    font-weight: normal;
+}
+
+ /*This class and the following classes allow for the elements of the navigation bar to have different colors depending on which page the viewer is currently on.*/
+.nav_link_on {
+    text-decoration: none;
+    color: White;
+}
+.nav_link_off {
+    text-decoration: none;
+    color: Grey;
+}
+
+
+/*This block changes the color of any link the moment is is clicked to give the viewer vidual feedback on whether or not a given link has been selected.*/
+a:active {
+    color: Firebrick;
+    text-decoration: none;
+}
+
+
+/*This class styles the profile picture which appears in the sidebar on every page.*/
+.portrait{
+    display: block;
+    width: 225px;
+    height: 225px;
+    margin: 20px;
+    border-width: 3px;
+    border-color: SaddleBrown;
+    border-style: outset;
+    border-radius: 100%;
+}
+
+
+/*This ID styles the caption on the profile picture which appears in the sidebar on every page*/
+#caption {
+    font-family: "Berkshire Swash", cursive;
+    font-size: 30px;
+}
+
+
+/*This class styles the border of the sidebar which appears on every page.*/
+.sidebar {
+    background-color: DimGrey;
+    border-width: 5px;
+    border-color: SaddleBrown;
+    border-style: ridge;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 100px;
+    float: right;
+    height: 1100px;
+    width: 275px;
+}
+
+
+/*This class styles the main text of the sidebar on every page*/
+.sidep {
+    padding: 5px;
+    color: Black;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+}
+
+
+/*The class is applied to links which we want to be underlined as opposed to the #office ID bellow.*/
+.sidebar_link{
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    color: Black;
+    text-decoration: none;
+}
+
+
+/*This little ID is for links which we would like underlined as opposed to the .sidebar_link class. */
+#office {
+    color: Black;
+}
+
+
+/*This class styles the header a page specific version of which appears on every page before the primary text of the page*/
+.header{
+    font-weight: 100;
+    text-align: center;
+}
+
+
+/*This class specifies all of the boder and font stylings to be applied to the main paraghraph text on the home page*/
+.hom_mainp {
+    background-color: DimGrey;
+    border-left: 5px ridge SaddleBrown;
+    border-right: 5px ridge SaddleBrown;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 40px;
+    color: Black;
+    font-size: 20px;
+    width: 800px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 20px;
+    font-family: "Raleway", sans-serif;
+}
+
+
+/*This class styles the picture of the rising mist on the home page.*/
+.mist_pic{
+    display: block;
+    width: 670px;
+    height: 300px;
+    margin: 20px;
+}
+
+
+/*This class specifies all of the boder and font stylings to be applied to the main paraghraph text on the tutoring page*/
+.tut_mainp {
+    background-color: DimGrey;
+    border-left: 5px ridge SaddleBrown;
+    border-right: 5px ridge SaddleBrown;
+    border-radius: 10px;
+    padding-top: 1px;
+    padding-bottom: 5px;
+    padding-right: 40px;
+    padding-left: 20px;
+    color: Black;
+    font-size: 20px;
+    width: 800px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 20px;
+    font-family: "Raleway", sans-serif;
+}
