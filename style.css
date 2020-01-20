@@ -13,7 +13,7 @@ html{
 }
 
 
-/*This block specifies the dimansions of the body of the pages. Auto margin centers the page on the screen, and over flow allows the viewer to scroll when zooming in to view peortions of the page which have moved off screen due to the zoom.*/
+/*This block specifies the dimansions of the body of the pages. Auto margin centers the page on the screen, and over flow allows the viewer to scroll when zooming in to view portions of the page which have moved off screen due to the zoom.*/
 body {
     max-width: 1400px;
     min-width: 1300px;
@@ -48,7 +48,7 @@ h1 {
 }
 
 
-/*This ID makes sure the navigation bar appears as a horizontal lits*/
+/*This ID makes sure the navigation bar appears as a horizontal list*/
 #nav-ul {
     display: inline;
 }
@@ -73,7 +73,7 @@ h1 {
 }
 
 
-/*This block changes the color of any link the moment is is clicked to give the viewer vidual feedback on whether or not a given link has been selected.*/
+/*This block changes the color of any link the moment is is clicked to give the viewer visual feedback on whether or not a given link has been selected.*/
 a:active {
     color: Firebrick;
     text-decoration: none;
