@@ -13,7 +13,7 @@ html{
 }
 
 
-/*This block specifies the dimansions of the body of the pages. Auto margin centers the page on the screen, and over flow allows the viewer to scroll when zooming in to view portions of the page which have moved off screen due to the zoom.*/
+/*This block specifies the dimensions of the body of the pages. "margin: auto" centers the page on the screen, and "overflow" allows the viewer to scroll when zooming in to view portions of the page which have moved off screen due to the zoom.*/
 body {
     max-width: 1400px;
     min-width: 1300px;
@@ -67,6 +67,8 @@ h1 {
     text-decoration: none;
     color: White;
 }
+
+
 .nav_link_off {
     text-decoration: none;
     color: Grey;
