@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-
-<!--See the CSS for the specifics on how the "html" has been styled.-->
 <html>
 
+
+
   
-  <!--Contains all formal preliminaries for the pages-->
+  <!----------------------------------------------------------------------------->
+  <!--Contains all formal preliminaries for the pages---------------------------->
+  <!----------------------------------------------------------------------------->
   <head>
     <!--Title of the Webpage-->
     <title>Dustin Leininger Tutoring</title>
@@ -19,12 +21,18 @@
   </head>
 
 
-  <!--See the CSS for the specifics on how the "body" has been styled.-->
+
+  
+  <!----------------------------------------------------------------------------->
+  <!--Contains the dispayed contents of the webpage------------------------------>
+  <!----------------------------------------------------------------------------->
   <body>
 
-    <!--This is the navigation bar at the top of the page-->
-    <!--The div refers to the .navigation class in the CSS which specifies the border style and word spacing. The IDs in the list elemnts specify that the list should be inline as we as specifying font-family and font-size. Finally, the class in each link specifies color depending on the page and no underlines-->
-    <div class="navigation">
+    
+    <!---------------------------------------------->
+    <!--Navigation Bar a the top of each page------->
+    <!---------------------------------------------->
+    <nav class="navigation">
       <ul id="nav-ul">
 	<li id="nav-li" title="home page"> <a href="index.html" class="nav_link_off"> About </a> </li>
 	
@@ -34,72 +42,69 @@
 	
 	<li id="nav-li" title="research"> <a href="daleinin_Research.html" class="nav_link_off"> Research </a> </li>
       </ul>
-    </div>
+    </nav>
 
 
-    <!--This div contains the sidebar which appears on every page with varying text-->
-    <div class="sidebar">
+    <!---------------------------------------------->
+    <!--Side Bar on the right side of each page----->
+    <!---------------------------------------------->
+    <aside class="sidebar">
 
-      <!--The "aside" container ensures the sidebar is indeed on the side of the page.-->
-      <aside>
+      <!--Contains the portrait in the side bar-->
+      <img class="portrait" src="Head_Shot_min.jpg" alt="picture of the author">
+      <figcaption id="caption">
+	Dustin Leininger
+      </figcaption>
 
-	  <!--This sub-div contains the link to my profile picture whichappears on every page including a caption with my name-->
-	  <div>
-	    <img class="portrait" src="Head_Shot_min.jpg" alt="picture of the author">
-	    <figcaption id="caption">
-	      Dustin Leininger
-	    </figcaption>
-	  </div>
+      <!--Contains the address info in the sidebar-->
+      <address class="sidep">
+	<strong>
+	  Email: daleinin@ncsu.edu <br>
+	  Office: <a id="office" href="https://www.google.com/maps/place/Language+and+Computer+Labs,+2341+Stinson+Dr,+Raleigh,+NC+27607/@35.7848425,-78.6697413,17z/data=!3m1!4b1!4m5!3m4!1s0x89acf58e19e85681:0xfaa5c303c40f3cb9!8m2!3d35.7848425!4d-78.6675526" target="_blank"> Laundry 108 </a>
+	</strong>
+      </address>
 
-	  <!--This div contains the primary content of the sidebar. As such it applies the class ".sidep" from the CSS style sheet.-->
-	  <div>
-	    <br>
-	    <address class="sidep">
-	      <strong>
-		Email: daleinin@ncsu.edu <br>
-		Office: <a id="office" href="https://www.google.com/maps/place/Language+and+Computer+Labs,+2341+Stinson+Dr,+Raleigh,+NC+27607/@35.7848425,-78.6697413,17z/data=!3m1!4b1!4m5!3m4!1s0x89acf58e19e85681:0xfaa5c303c40f3cb9!8m2!3d35.7848425!4d-78.6675526" target="_blank"> Laundry 108 </a>
-	      </strong>
-	    </address>
-	    <p class="sidep">
-	      Hello and Welcome!<br>
-	      You have found my personal website. <br>
-	      <br>
-	      This page is dedicated to the private tutoring services I offer throughtout the academic year. Here you'll find a brief description of my previous experiences with tutoring and education as well as a fairly comprehensive list of courses and subjects for which I am available.
-	      <br>
-	      <br>
-	      The best way to contact me is via the email address above.
-	      <br>
-	      <br>
-	      <br>
-	      <!--This is a list of links to NCSU and the Math Dept. See the CSS for how the "sidebar_link" class styles the links.-->
-	      <strong style="text-decoration:underline">
-		Links
-	      </strong>
+      <!--Contains the text content of the sidebar-->
+      <p class="sidep">
+	Hello and Welcome!<br>
+	You have found my personal website. <br>
+	<br>
+	This page is dedicated to the private tutoring services I offer throughtout the academic year. Here you'll find a brief description of my previous experiences with tutoring and education as well as a fairly comprehensive list of courses and subjects for which I am available.
+	<br>
+	<br>
+	The best way to contact me is via the email address above.
+	<br>
+	<br>
+	<br>
 
-	      <ul>
-		<li> <a href="https://www.ncsu.edu/" target="_blank" class="sidebar_link"> North Carolina State University </a> </li>
-		<br>
-		<li> <a href="https://math.sciences.ncsu.edu/" target="_blank" class="sidebar_link"> Mathematics Department </a> </li>
-	      </ul>
-	      
-	    </p>
-	  </div>
-	  
-      </aside>
-    </div>
+	<!--This is a list of links to NCSU and the Math Dept-->
+	<strong style="text-decoration:underline">
+	  Links
+	</strong>
+	<ul>
+	  <li> <a href="https://www.ncsu.edu/" target="_blank" class="sidebar_link"> North Carolina State University </a> </li>
+	  <br>
+	  <li> <a href="https://math.sciences.ncsu.edu/" target="_blank" class="sidebar_link"> Mathematics Department </a> </li>
+	</ul>      
+      </p>
+
+    </aside>
+
     
-    <!--This little div contains the header which appears of the page before the main text of the page. See the CSS for the styles which have been applied to the "h1" environment.-->
-    <div>
-      <h1 class="header" style="text-align:center">All About My Tutoring</h1>
-    </div>
+    <!---------------------------------------------->
+    <!--Header located below the navigation bar----->
+    <!---------------------------------------------->
+    <h1 class="header" style="text-align:center">All About My Tutoring</h1>
+    
 
-    <!--This div conatins the primary content of the page-->
-    <!--See the CSS for the "tut_mainp" class which contains all of the border and font stylings for the main paragraph text on the tutoring page.-->
-    <div class="tut_mainp">
-      <ul>
-	
+    <!---------------------------------------------->
+    <!--Section contains list of course I tutor----->
+    <!---------------------------------------------->
+    <section class="tut_mainp">
+      
+      <ul>	
 	<li> <strong> Courses: </strong> </li>
-
+	
 	<!--This lists the Calculus Courses which I tutor.-->
 	<ul>
 	  <li> Calculus: </li>
@@ -108,8 +113,7 @@
 	    <li> Calculus I: MA 121, MA 131, MA 141 </li>
 	    <li> Calculus II: MA 241 </li>
 	    <li> Calculus III: MA 242 </li>
-	  </ul>
-	    
+	  </ul>	    
 	</ul>
 	
 	<br>
@@ -157,11 +161,13 @@
 	
       </ul>
       <p>(other courses maybe available upon request.)</p>
-    </div>
+      
+    </section>
+
     
-    <!--See the CSS for the "tut_mainp" class which contains all of the border and font stylings for the main paragraph text on the tutoring page.-->
-    <div class="tut_mainp">
-      <!--This lists my experiences as a tutor with links styled by the "#office" ID. See the CSS for details-->
+    <!--This section details my previous tuturing experience-->
+    <section class="tut_mainp">
+      
       <ul>
 	<li> <strong> Experience: </strong> (proffessional tutorial centers, not inlcuding private tutoring) </il>
         <br>
@@ -189,13 +195,16 @@
 	    <li> <a id="office" href="https://physicstutorialcenter.wordpress.ncsu.edu/" target="_blank"> Physics Tutorial Center (PTC): </a> is a drop-in tutorial center run and operated by the Physics Department at North Carolina State University. While similar in style to the MMC, the PTC also often hires advanced undergraduates as well as graduate students in the physics department. While employed in the PTC, we were free to help any student on any physics related material. </li>
 	  </ul>
 	
-      </ul>
-    </div>
+	</ul>
+	
+    </seciton>
      
   </body>
 
-  <!--This footer appears at the bottom of every page and credits the author of the background image-->
-   <footer> <a href="http://www.freepik.com/free-photos-vectors/background" style="color:Grey;margin:40px">Background vector created by Kjpargeter - Freepik.com</a>
+  <!----------------------------------------------------------------------------->
+  <!--Credits the author of the background image--------------------------------->
+  <!----------------------------------------------------------------------------->
+  <footer> <a href="http://www.freepik.com/free-photos-vectors/background" style="color:Grey;margin:40px">Background vector created by Kjpargeter - Freepik.com</a>
   </footer>
 
   

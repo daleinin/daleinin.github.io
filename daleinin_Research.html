@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-
-<!--See the CSS for the specifics on how the "html" has been styled.-->
 <html>
 
 
-  <!--Contains all formal preliminaries for the pages-->
+
+  
+  <!----------------------------------------------------------------------------->
+  <!--Contains all formal preliminaries for the pages---------------------------->
+  <!----------------------------------------------------------------------------->
   <head>
     <!--Title of the Webpage-->
     <title>Dustin Leininger Research</title>
@@ -18,12 +20,19 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   </head>
 
-  <!--See the CSS for the specifics on how the "body" has been styled.-->
+
+
+  
+  <!----------------------------------------------------------------------------->
+  <!--Contains the dispayed contents of the webpage------------------------------>
+  <!----------------------------------------------------------------------------->
   <body>
 
-    <!--This is the navigation bar at the top of the page-->
-    <!--The div refers to the .navigation class in the CSS which specifies the border style and word spacing. The IDs in the list elements specify that the list should be inline as we are specifying font-family and font-size. Finally, the class in each link specifies color depending on the page and no underlines-->
-    <div class="navigation">
+
+    <!---------------------------------------------->
+    <!--Navigation Bar a the top of each page------->
+    <!---------------------------------------------->
+    <nav class="navigation">
       <ul id="nav-ul">
 	<li id="nav-li" title="home page"> <a href="index.html" class="nav_link_off"> About </a> </li>
 	
@@ -33,127 +42,107 @@
 	
 	<li id="nav-li" title="current page"> <a href="daleinin_Research.html" class="nav_link_on"> Research </a> </li>
       </ul>
-    </div>
+    </nav>
 
     
-    <!--This div contains the sidebar which appears on every page with varying text-->
-    <div class="sidebar">
+    <!---------------------------------------------->
+    <!--Side Bar on the right side of each page----->
+    <!---------------------------------------------->
+    <aside class="sidebar">
 
-      <!--The "aside" container ensures the sidebar is indeed on the side of the page.-->
-      <aside>
+      <!--Contains the portrait in the side bar-->
+      <img class="portrait" src="Head_Shot_min.jpg" alt="picture of the author">
+      <figcaption id="caption">
+	Dustin Leininger
+      </figcaption>
 
-	  <!--This sub-div contains the link to my profile picture whichappears on every page including a caption with my name-->
-	  <div>
-	    <img class="portrait" src="Head_Shot_min.jpg" alt="picture of the author">
-	    <figcaption id="caption">
-	      Dustin Leininger
-	    </figcaption>
-	  </div>
+      <!--Contains the address info in the sidebar-->
+      <address class="sidep">
+	<strong>
+	  Email: daleinin@ncsu.edu <br>
+	  Office: <a id="office" href="https://www.google.com/maps/place/Language+and+Computer+Labs,+2341+Stinson+Dr,+Raleigh,+NC+27607/@35.7848425,-78.6697413,17z/data=!3m1!4b1!4m5!3m4!1s0x89acf58e19e85681:0xfaa5c303c40f3cb9!8m2!3d35.7848425!4d-78.6675526" target="_blank"> Laundry 108 </a>
+	</strong>
+      </address>
 
-	  <!--This div contains the primary content of the sidebar. As such it applies the class ".sidep" from the CSS style sheet.-->
-	  <div>
-	    <!-- <p class="sidep"> -->
-	    <!--This is my email and a link to Google maps with the location of my office. The link to Google maps is styled by the "office" ID in the CSS which makes the font-color of the link black.-->
-	    <br>
-	    <address class="sidep">
-	      <strong>
-		Email: daleinin@ncsu.edu <br>
-		Office: <a id="office" href="https://www.google.com/maps/place/Language+and+Computer+Labs,+2341+Stinson+Dr,+Raleigh,+NC+27607/@35.7848425,-78.6697413,17z/data=!3m1!4b1!4m5!3m4!1s0x89acf58e19e85681:0xfaa5c303c40f3cb9!8m2!3d35.7848425!4d-78.6675526" target="_blank"> Laundry 108 </a>
-	      </strong>
-	    </address>
-	    <p class="sidep">
-	      Hello and Welcome!<br>
-	      You have found my personal website. <br>
-	      <br>
-	      This page is dedicated to my current research endevours which currently comprises of two main projects the details of which can be found to the right.
-	      <br>
-	      <br>
-	      <br>
-	      <!--This is a list of links to NCSU and the Math Dept. See the CSS for how the "sidebar_link" class styles the links.-->
-	      <strong style="text-decoration:underline">
-		Links
-	      </strong>
-
-	      <ul>
-		<li> <a href="https://www.ncsu.edu/" target="_blank" class="sidebar_link"> North Carolina State University </a> </li>
-		<br>
-		<li><a href="https://math.sciences.ncsu.edu/" target="_blank" class="sidebar_link"> Mathematics Department </a> </li>
-	      </ul>
-	      
-	    </p>
-	  </div>
+      <!--Contains the text content of the sidebar-->
+      <p class="sidep">
+	Hello and Welcome!<br>
+	You have found my personal website.
+	<br>
+	<br>
+	This page is dedicated to my current research endevours which currently comprises of two main projects the details of which can be found to the right.
+	<br>
+	<br>
+	<br>
+	
+	<!--This is a list of links to NCSU and the Math Dept-->
+	<strong style="text-decoration:underline">
+	  Links
+	</strong>
+	<ul>
+	  <li> <a href="https://www.ncsu.edu/" target="_blank" class="sidebar_link"> North Carolina State University </a> </li>
+	  <br>
+	  <li><a href="https://math.sciences.ncsu.edu/" target="_blank" class="sidebar_link"> Mathematics Department </a> </li>
+	</ul>
+      </p>
 	  
-      </aside>
-    </div>
+    </aside>
 
-    <!--This little div contains the header which appears of the page before the main text of the page. See the CSS for the styles which have been applied to the "h1" environment.-->
-    <div>
-      <h1 class="header">All About My Research</h1>
-    </div>
+    
+    <!---------------------------------------------->
+    <!--Header located below the navigation bar----->
+    <!---------------------------------------------->
+    <h1 class="header">All About My Research</h1>
 
-    <!--This div conatins the primary content of the page-->
-    <div>
-      <!--See the CSS for the "hom_mainp" class which contains all of the border and font stylings for the main paragraph text on the home page.-->
+
+    <!---------------------------------------------->
+    <!--Section contains primary content------------>
+    <!---------------------------------------------->
+    <section>
+
+
+      
+      <!--Constains brief summary of research projects-->
       <p class="hom_mainp"> I am currently engaged in two projects. <br>
 	One is computational, the other theoretical.
       </p>
-      <ul class="hom_mainp">
-	<li><strong>Computational</strong> </li>
-      First, I am working to apply recently developed techniques and technologies in the field of topological data analysis to problems in machine learning. Image classifiers (computer vision in general) are a common application of machine learning methods. However, they can be easy to overtrain and difficult to generalize to novel datasets since they primarly analyize images at the level of pixels.
-	<br>
-	<br>
-	Topological data analysis leverages the power of algebraic topology to analize datasets by computing topological invariants of the data. The topological invariants have the advantage of being homotopy invariant (robust under pertubations of the data) and also global (characteristic of the entire image not just the individual pixels). Correctly integrating these topological invariants into a machine learning model is expected to increase the robustness and generalizability of such models.
-      </ul>
 
-      <ul class="hom_mainp">
-	<li><strong>Theoretical</strong> </li>
-	For my second project, the goal is to fill in some of the missing pieces in the recent theory of categorified graph polynomials. Namely, the chromatic polynomial for graphs has been categorified both algebraically and geometrically. While some results have been obtained in both respects as well as some results relating the two, there are still many open questions.
-	<br>
-	<br>
-	Namely, do graph morphisms induce morphisms in the algebraic categorification? How might we interpret the geometric categorification in terms of differential forms (and thereby solutions to differential equations)? What, if any, duality results hold for the algebraic categorification and do the carry over to they geometric side of things?
-	<br>
-	<br>
-	These are a few of the questions on which I am currently working.
-      </ul>
-<!--       <ul class="hom_mainp">
-	 Below are a few of my research notes on these topics.
-	 <br>
-	 <br>
-	
-	<li> <a href="Research_Docs/Research_Notes.pdf" target="blank" class="sidebar_link"> <b>Composite de Rham and Chromatic Cohomology</b> </a> </li>
-	<ul>
-	  <li> This document begins with a review of the categorification of the chromatic polynomial via the state sum formula. It then discusses how to apply the resulting complex to smooth manifolds by inserting the de Rham complex of differential forms into the construction. It ends with an example of the resulting bicomplex. </li>
-	</ul>
-	<br>
 
-       <li> <a href="Research_Docs/Composite_Cohomology_Differentials.pdf" target="blank" class="sidebar_link"> <b>The Differentials of the Bicomplex</b> </a> </li>
-	<ul>
-	  <li> This document first establishes the explicit definitions of the differentials which appear in the bicomplex. It then goes on to establish some  basic properties of the differentials inlcuding commutativity and squaring to zero. </li>
+      
+      <!--Constains brief summary of computational research project-->
+      <article>
+	<ul class="hom_mainp">
+	  <li><strong>Computational</strong> </li>
+	  First, I am working to apply recently developed techniques and technologies in the field of topological data analysis to problems in machine learning. Image classifiers (computer vision in general) are a common application of machine learning methods. However, they can be easy to overtrain and difficult to generalize to novel datasets since they primarly analyize images at the level of pixels.
+	  <br>
+	  <br>
+	  Topological data analysis leverages the power of algebraic topology to analize datasets by computing topological invariants of the data. The topological invariants have the advantage of being homotopy invariant (robust under pertubations of the data) and also global (characteristic of the entire image not just the individual pixels). Correctly integrating these topological invariants into a machine learning model is expected to increase the robustness and generalizability of such models.
 	</ul>
-	<br>
+      </article>
 
-	<li> <a href="Research_Docs/The_Chromatic_Differential_Factors.pdf" target="blank" class="sidebar_link"> <b>Factoring the Chromatic Differential</b> </a> </li>
-	<ul>
-	  <li> This document describes a factorization of the chromatic differential as the composition of the Kunneth Homomorphism and the pullback under the embedding map of the diagonal into the product manifold. This factorization makes clear how the chromatic complex encodes information about diagonals in the graph configuration space of the the manifold. </li>
-	</ul>
-	<br>
 
-	<li> <a href="Research_Docs/P1_R1_Computation.pdf" target="blank" class="sidebar_link"> <b>A Simple Example Computation</b> </a> </li>
-	<ul>
-	  <li> This document contains a detailed computation of the first two pages of the resulting spectral sequence in the case in which the manifold is the real line and the graph is given by two vertices connected by one edge. </li>
+      
+      <!--Constains brief summary of theoretical research project-->
+      <article>
+	<ul class="hom_mainp">
+	  <li><strong>Theoretical</strong> </li>
+	  For my second project, the goal is to fill in some of the missing pieces in the recent theory of categorified graph polynomials. Namely, the chromatic polynomial for graphs has been categorified both algebraically and geometrically. While some results have been obtained in both respects as well as some results relating the two, there are still many open questions.
+	  <br>
+	  <br>
+	  Namely, do graph morphisms induce morphisms in the algebraic categorification? How might we interpret the geometric categorification in terms of differential forms (and thereby solutions to differential equations)? What, if any, duality results hold for the algebraic categorification and do the carry over to they geometric side of things?
+	  <br>
+	  <br>
+	  These are a few of the questions on which I am currently working.
 	</ul>
-	
-       </ul>
-	 
-      </p>
--->
-    </div>
+      </article>
      
   </body>
 
-  <!--This footer appears at the bottom of every page and credits the author of the background image-->
-   <footer> <a href="http://www.freepik.com/free-photos-vectors/background" style="color:Grey;margin:40px">Background vector created by Kjpargeter - Freepik.com</a>
-  </footer>
 
+  <!----------------------------------------------------------------------------->
+  <!--Credits the author of the background image--------------------------------->
+  <!----------------------------------------------------------------------------->
+  <footer> <a href="http://www.freepik.com/free-photos-vectors/background" style="color:Grey;margin:40px">Background vector created by Kjpargeter - Freepik.com</a>
+  </footer>
   
 </html>
