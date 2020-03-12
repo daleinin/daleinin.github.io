@@ -113,22 +113,22 @@
       <article>
 	<ul class="hom_mainp">
 	  <li><strong>Computational</strong> </li>
-	  First, I am working to apply recently developed techniques and technologies in the field of topological data analysis to problems in machine learning. Image classifiers (computer vision in general) are a common application of machine learning methods. However, they can be easy to overtrain and difficult to generalize to novel datasets since they primarly analyize images at the level of pixels.
+	  First, I am working to apply recently developed techniques and technologies in the field of topological data analysis to problems in machine learning. Image classifiers (computer vision in general) are a common application of machine learning methods. However, they can be easy to overtrain and difficult to generalize to novel datasets since they primarly analyze images at the level of pixels.
 	  <br>
 	  <br>
-	  Topological data analysis leverages the power of algebraic topology to analize datasets by computing topological invariants of the data. The topological invariants have the advantage of being homotopy invariant (robust under pertubations of the data) and also global (characteristic of the entire image not just the individual pixels). Correctly integrating these topological invariants into a machine learning model is expected to increase the robustness and generalizability of such models.
+	  Topological data analysis leverages the power of algebraic topology to analyze images/datasets via homotopy invariants which have the property of being robust under pertubations and also global (characteristic of an entire image not just the individual pixels). Correctly integrating these invariants into a machine learning model is expected to increase the robustness and generalizability of such models.
 	  <br>
 	  <br>
 	  Namely, persistence homology seeks to qualitatively capture the shape of a data set by clustering the data in a sequential manner (think k-nearest neighbor), constructing an associated sequence of topological spaces, and computing the homotopy invariants of the associated sequence of spaces. The invariants themselves describe the shape of the spaces by detecting certain features of the spaces which, if constructed with care from the original sequence of data clusters, faithfully represents the shape of the data set.
 	  <br>
 	  <br>
-	  The output of persistence homology is called a Persistence Diagram (PD). Each feature in the sequence of topological spaces is assigned a point in the plane where the x-coordinate is given by where in the sequence of spaces the feature first appears (its birth) and y-coordinate given by where in the sequences of spaces the feature no longer appears (its death). The result is a PD.
+	  The output of persistence homology is called a Persistence Diagram (PD). Each feature in the sequence of topological spaces is assigned a point in the plane where the x-coordinate is given by where in the sequence of spaces the feature first appears (its birth) and y-coordinate given by where in the sequences of spaces the feature no longer appears (its death).
 	  <br>
 	  <br>
 	  An RGB image can be considered as a structured data set of pixel values. Color images are first broken down into their color channels and PDs generated for each color. Since PDs can be a bit difficult to work with directly, summary statistics called Persistece Curves (PCs) are often derived from PDs and used for training instead.
 	  <br>
 	  <br>
-	  In the figure below, you can see this process being carried out on a 200x200 pixel 8-bit RGB image of a piece of cloth taken at close range. In this analysis there are two PDs per color channel and one PC for each PD. The PCs are generated from the PDs by counting the number of points in the rectangle as it slides up the diagonal. These particular PCs are called Betti Curves.
+	  In the figure below, you can see this process being carried out on a 200x200 pixel 8-bit RGB image of a piece of cloth taken at close range. In this analysis there are two PDs per color channel and one PC for each PD. The PCs are generated from the PDs by counting the number of points in the rectangle as it slides up the diagonal in the PD (or as more pixels become illuminated in the images). These particular PCs are called Betti Curves.
 	  <br>
 	  <br>
 	  <img src="tda.gif" alt="topological data analysis gif", style="width:710px;height:425px;">
